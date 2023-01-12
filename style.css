@@ -38,8 +38,9 @@ nav{
 }
 .intro{
     max-width: 800px;
-    margin: -20rem auto;
+    margin: 0rem auto;
     position: relative;
+    margin-top: -18rem;
 
 }
 .introduction{
@@ -246,6 +247,9 @@ input[type='radio']#cyan{
     header{
         background-image:url('./images/image-hero-mobile.jpg');
         padding: 2rem 1.8rem;
+        height: 52vh;
+        background-size: cover;
+        background-position: center;
     }
    .nav-content a{
   display: none;
@@ -255,8 +259,15 @@ input[type='radio']#cyan{
     }
     .intro{
         position: relative;
-    margin: -40rem 0;
+    margin: -7rem 0;
   padding: 0 1rem;
+    }
+    .introduction{  
+  height: auto;
+  padding: 1em;
+    }
+    .btn-cyan{
+        font-size: .9rem;
     }
     button, .btn-bookmark{
         margin: 0 1.8rem;
