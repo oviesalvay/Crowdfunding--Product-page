@@ -247,7 +247,7 @@ input[type='radio']#cyan{
     header{
         background-image:url('./images/image-hero-mobile.jpg');
         padding: 2rem 1.8rem;
-        height: 52vh;
+        height: 50vh;
         background-size: cover;
         background-position: center;
     }
@@ -264,10 +264,10 @@ input[type='radio']#cyan{
     }
     .introduction{  
   height: auto;
-  padding: 1em;
+  padding: 2em;
     }
     .btn-cyan{
-        font-size: .9rem;
+        font-size: .6rem;
     }
     button, .btn-bookmark{
         margin: 0 1.8rem;
