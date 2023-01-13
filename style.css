@@ -307,9 +307,6 @@ input[type='radio']#cyan{
   height: auto;
   padding: 2em;
     }
-    .introduction img{
-        /* margin-top: -3rem; */
-    }
     .btn-bookmark > button{
         padding: .7rem 1rem;
     }
