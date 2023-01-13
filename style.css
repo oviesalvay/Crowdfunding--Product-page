@@ -50,29 +50,37 @@ nav{
     height: 40vh;
 }
  .introduction img{
-    margin-top: -2rem;
-    position: absolute;
+    transform: translate(0, -90%);
 }
   h1{
     font-size: 2rem;
     font-weight: 700;
-    padding-top: 3rem;
 }
  button {
     padding: 1rem 2rem;
     border-radius: 3rem;
     border:none; 
-    margin: 1rem 2rem;
+    /* margin: 1rem 2rem; */
     font-size: 1rem;
 }
 .btn-bookmark{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .btn-cyan{
-    background-color:hsl(176, 50%, 47%);
+    background-color: hsl(176, 50%, 47%);
     color:white;
+
+}
+.btn-bookmark > button{
     font-size: 1rem;
+    color:white;
+    margin: 0;
+    background-color:hsl(176, 50%, 47%);
+    height: fit-content;
+    padding: 1.3rem 3rem;
+
 }
 .btn-cyan:hover{
     background-color:hsl(176, 72%, 28%);
@@ -256,19 +264,43 @@ input[type='radio']#cyan{
     header{
         background-image:url('./images/image-hero-mobile.jpg');
         padding: 2rem 1.8rem;
-        height: 60vh;
+        height: 400px;
         background-size: cover;
         background-position: center;
+        position: relative;;
     }
-   .nav-content a{
-  display: none;
+   .nav-content{
+    position: absolute;
+    z-index: 1;
+    background-color: whitesmoke;
+    height: fit-content;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 400px;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3%;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 4rem;
+    }
+    .show-nav{
+  opacity: 1;
+  pointer-events: all;
+    }
+    .nav-content a{
+        color:black;
+        display: block;
+        margin: 2rem 1rem;
+        /* text-align: center; */
+
     }
     .ham{
         display: block;
     }
     .intro{
         position: relative;
-    margin: -7rem 0;
+    margin: -5rem 0;
   padding: 0 1rem;
     }
     .introduction{  
@@ -276,17 +308,10 @@ input[type='radio']#cyan{
   padding: 2em;
     }
     .introduction img{
-        margin-top: -3rem;
+        /* margin-top: -3rem; */
     }
-    .introduction .btn-cyan{
-        font-size: .6rem;
-        padding: .1rem 5rem; 
-    } 
-    .btn-cyan, .button-gray{
-        padding: 1rem 3rem;
-    }
-     .btn-bookmark{
-      margin: 0 1rem;  
+    .btn-bookmark > button{
+        padding: .7rem 1rem;
     }
     .btn-gray{
         display: none;
@@ -316,6 +341,7 @@ input[type='radio']#cyan{
     .select{
         flex-direction: column;
         align-items: flex-start;
+        gap: 2rem;
     }
     .select h5{
         margin: 1.5rem 0;
